@@ -1,18 +1,17 @@
 name:conf-demo
+name: conf-demo
 
-on:
-    workflow
+on: [push]  # or any valid event like "workflow_dispatch" or "pull_request"
 
- env:
-      a:hello
-      b:how are you
-      c:aws
+env:
+  a: hello
+  b: how are you
+  c: aws
+
 jobs:
-     greetings-job
-     runs-on:ubuntu-latest
+  greetings-job:
+    runs-on: ubuntu-latest
 
-     steps: 
-            name: say greetings
-            run: echo " $a $b $c "
-            
-           
+    steps:
+      - name: say greetings
+        run: echo "$a $b $c"
