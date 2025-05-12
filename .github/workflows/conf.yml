@@ -1,4 +1,4 @@
-name:conf-demo
+
 name: conf-demo
 
 on: [push]  # or any valid event like "workflow_dispatch" or "pull_request"
