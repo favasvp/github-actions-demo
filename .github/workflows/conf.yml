@@ -14,4 +14,4 @@ jobs:
 
     steps:
       - name: say greetings
-        run: echo "$a $b $c ${{ var.aws_key}}!"
+        run: echo "$a $b $c ${{ vars.aws_key}}!"
