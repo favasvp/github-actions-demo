@@ -13,6 +13,6 @@ jobs:
   steps:
     - name: "checking context variabe "
     run: |
-       echo "repository name : ${{ github.repository }}
-       echo "workflow name : ${{ github.workflow }}
+       echo "repository name : ${{ github.repository }} "
+       echo "workflow name : ${{ github.workflow }} "
      
