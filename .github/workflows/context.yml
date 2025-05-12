@@ -4,14 +4,14 @@ on:
   workflow_dispatch
   
 env:
-   a:google-cloud
-   b:aws
+  a:google-cloud
+    b:aws
 
 jobs: 
-    test_context_variable
-     runs-on:ubuntu-latest
-   steps:
-      -name: "checking context variabe "
+  test_context_variable
+    runs-on:ubuntu-latest
+  steps:
+    -name: "checking context variabe "
     run:
        echo "repository name : {{ github.repository }}
        echo "workflow name : {{ github.workflow }}
